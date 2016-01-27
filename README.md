@@ -24,10 +24,15 @@ Alternately... leave off the variable and it will be output by the tag.
 JAVA in CF (Example using the loader class)
 ```html
 <cfset paths = ArrayNew(1)>
-<cfset ArrayAppend(paths,"C:\ColdFusion11\cfusion\lib\Radix.jar")>
+<cfset ArrayAppend(paths,"C:\ColdFusion11\cfusion\lib\Radix.jar")>			
 <cfset loader = createObject("component", "javaloader.JavaLoader").init(loadPaths=paths, loadColdFusionClassPath=true)>
+<cfset radix = loader.create("com.intersuite.Radix")>
+<cfdump var="#radix#">
+
 <cfset result = radix.convert("FFFF","BASE16","BASE10")>
+
 <cfdump var="#result#">
+
 
 ```
 ### Attributes
