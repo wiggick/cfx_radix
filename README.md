@@ -21,7 +21,7 @@ CFX Tag
 Alternately... leave off the variable and it will be output by the tag.
 <cfx_radix value="A8E2A5E989E54EBE354F93D6A7194815" sourcebase="BASE16" targetbase="BASE75">
 ```
-JAVA in CF (Example using the loader class)
+JAVA in CF (Example using the loader cfc)
 ```html
 <cfset paths = ArrayNew(1)>
 <cfset ArrayAppend(paths,"C:\ColdFusion11\cfusion\lib\Radix.jar")>			
