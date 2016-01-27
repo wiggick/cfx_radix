@@ -11,7 +11,9 @@ The Radix class can be used as a ColdFusion Java cfx taq or as a Java POJO
 - Copy the Radix.jar to
 your cfusion lib directory (i.e. C:\ColdFusion11\cfusion\lib)
 - In your ColdFusion Administrator->Extensions->CFX Tags: add cfx_radix with the Class Name "com.intersuite.Radix"
+
 ### Usage
+
 CFX Tag
 ```html
 <cfx_radix value="A8E2A5E989E54EBE354F93D6A7194815" sourcebase="BASE16" targetbase="BASE75" variable="foo">
